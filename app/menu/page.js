@@ -171,7 +171,7 @@ function Menu({ table }) {
               name="Crispy Starters"
               description="Lightly seasoned and perfectly fried."
               price={280}
-              img="/menu/sample.jpg"
+              img="/menu/sample.jpeg"
               cartItem={getItem("cs")}
               onAdd={addItem}
               onQty={updateQty}
@@ -186,7 +186,7 @@ function Menu({ table }) {
               name="Signature Main Dish"
               description="Chef curated premium flavours."
               price={420}
-              img="/menu/sample.jpg"
+              img="/menu/sample1.jpeg"
               cartItem={getItem("mc")}
               onAdd={addItem}
               onQty={updateQty}
@@ -201,7 +201,7 @@ function Menu({ table }) {
               name="Refreshing Beverage"
               description="Crafted in-house."
               price={220}
-              img="/menu/sample.jpg"
+              img="/menu/sample2.jpeg"
               cartItem={getItem("dr")}
               onAdd={addItem}
               onQty={updateQty}
@@ -279,6 +279,26 @@ function Menu({ table }) {
           </div>
         </div>
       )}
+      {/* ================= TABLE OS BRANDING ================= */}
+      <div className="mt-16 mb-4 text-center text-[11px] text-gray-400">
+        <div className="flex items-center justify-center gap-2">
+          <img
+            src="/tableos-icon.png"
+            alt="Table OS"
+            className="w-4 h-4 opacity-70"
+          />
+          <span>
+            Powered by <span className="font-medium">Table OS</span>
+          </span>
+        </div>
+
+        <a
+          href="mailto:tableoswork@gmail.com"
+          className="underline block mt-1"
+        >
+          tableoswork@gmail.com
+        </a>
+      </div>
 
     </main>
   );
